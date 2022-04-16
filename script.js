@@ -38,7 +38,7 @@ let displayValue;
 
 function addToDisplay(number) {
     document.getElementById("display").insertAdjacentHTML("beforeend", number);
-    displayValue = document.getElementById("display").textContent;
+    displayValue = parseInt(document.getElementById("display").textContent);
 }
 
 const one = document.querySelector("#one");
@@ -77,4 +77,7 @@ const nine = document.querySelector("#nine");
 nine.addEventListener("click", () => {
     addToDisplay("9");
 }) 
+
+
+
 
