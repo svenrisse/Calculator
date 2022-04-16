@@ -1,25 +1,37 @@
 /* basic math operators */
 
 function add(a, b) {
-    console.log(a+b);
+    return(a+b);
 }
-
-add(5,4);
 
 function subtract(a, b) {
-    console.log(a-b);
+    return(a-b);
 }
-
-subtract(5,4);
 
 function multiply(a,b) {
-    console.log(a * b);
+    return(a * b);
 }
-
-multiply(2,5);
 
 function divide(a,b) {
-    console.log(a / b);
+    return(a / b);
 }
 
-divide(10,2);
+/* operate function to take an operator and 2 number and call above functions */
+
+function operate(operator, a, b) {
+    switch(operator) {
+        case "+":
+            return add(a,b)
+        case "-":
+            return subtract(a,b);
+        case "*":
+            return multiply(a,b);
+        case "/":
+            return divide(a,b);
+
+
+    }
+}
+
+
+alert(operate("*",5,10))
