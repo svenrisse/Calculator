@@ -77,7 +77,45 @@ const nine = document.querySelector("#nine");
 nine.addEventListener("click", () => {
     addToDisplay("9");
 }) 
+const zero = document.querySelector("#zero");
+zero.addEventListener("click" , () => {
+    addToDisplay("0");
+})
 
 
 
+/* Operations */
 
+let firstValue = 0;
+let secondValue = 0;
+let operator;
+
+const equals = document.getElementById("equals");
+equals.addEventListener("click" , () => {
+    secondValue = parseInt(document.getElementById("display").textContent);
+    document.getElementById("display").textContent = operate(operator,firstValue,secondValue); 
+})
+
+const plus = document.getElementById("plus");
+plus.addEventListener("click" , () => {
+    operator = "+";
+    firstValue = parseInt(document.getElementById("display").textContent);
+    document.getElementById("display").textContent = "";
+})
+
+const minus = document.getElementById("minus");
+minus.addEventListener("click" , () => {
+    operator = "-";
+    firstValue = parseInt(document.getElementById("display").textContent);
+    document.getElementById("display").textContent = "";
+})
+
+/* Clear button */
+
+const clear = document.getElementById("clear");
+clear.addEventListener("click" , () => {
+    firstValue = 0;
+    secondValue = 0;
+    operator = "";
+    document.getElementById("display").textContent = "";
+})
