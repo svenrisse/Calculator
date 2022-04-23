@@ -107,6 +107,7 @@ plus.addEventListener("click" , () => {
     if (firstValue) {
         secondValue = parseInt(document.getElementById("display").textContent)
         firstValue = operate(operator,firstValue,secondValue)
+        operator = "+"
         document.getElementById("display").textContent = ""
         secondValue = 0
     } else {
@@ -122,6 +123,7 @@ minus.addEventListener("click" , () => {
     if (firstValue) {
         secondValue = parseInt(document.getElementById("display").textContent)
         firstValue = operate(operator,firstValue,secondValue)
+        operator = "-"
         document.getElementById("display").textContent = ""
         secondValue = 0
     } else {
@@ -136,6 +138,7 @@ multi.addEventListener("click" , () => {
     if (firstValue) {
         secondValue = parseInt(document.getElementById("display").textContent)
         firstValue = operate(operator,firstValue,secondValue)
+        operator = "*"
         document.getElementById("display").textContent = ""
         secondValue = 0
     } else {
@@ -150,6 +153,7 @@ div.addEventListener("click" , () => {
     if (firstValue) {
         secondValue = parseInt(document.getElementById("display").textContent)
         firstValue = operate(operator,firstValue,secondValue)
+        operator = "/"
         document.getElementById("display").textContent = ""
         secondValue = 0
     } else {
