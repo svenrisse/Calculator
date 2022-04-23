@@ -2,6 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .container {
     height: 500px;
@@ -15,56 +16,49 @@ body {
 
 .top {
     display: flex;
-    justify-content: flex-start;
-    width: 400px;
+    justify-content: center;
+    
     
 }
 
 .display {
-    height: 20px;
-    width: 194px;
-    text-align: center;
-    border-style: groove;
-    margin-left: 70px;
-}
-
-.clear {
-    width: 40px;
-    height: 30px;
-    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    height: 50px;
+    width: 400px;
+    border-style: groove;
+    background-color: darkcyan;
+    font-size: 25px;
+    border-style: solid;
+    border-width: 2px 2px 0px 2px;
 }
 
 .bottom {
-    display: flex;
-    justify-content: center;
+    height: 600px;
     width: 400px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border-style: solid;
+    border-width: 2px;
 }
 
-.numbers {
-    height: 200px;
-    width: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.btn {
-    height: 40px;
-    width: 33%;
-}
-
-.operators {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 20px;
+.number {
+    font-size: 20px;
+    background-color: paleturquoise;
 }
 
 .operator {
-    width: 40px;
-    height: 30px;
+    font-size: 20px;
+    background-color: lightseagreen;
+}
+
+.equals {
+    font-size: 20px;
+    background-color: darkcyan;
+}
+
+.clear {
+    font-size: 18px;
+    background-color: mediumaquamarine;
 }
